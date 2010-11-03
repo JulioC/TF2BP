@@ -1,0 +1,3 @@
+[submodule "libs/steamapi"]
+	path = libs/steamapi
+	url = F:/dev/jQuery-SteamAPI
