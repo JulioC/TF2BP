@@ -301,7 +301,8 @@ $(function(){
     
     return {
       init: function() {
-        $.steam.webapi.setBase('box.thejcs.com.br:8080');
+        // This is our proxy url
+        $.steam.webapi.setBase('tf2bp.com:8080');
         
         $.tf2bp.setItemImageMask(function(src, data) {
           var filename = getImageFile(src);
