@@ -1,0 +1,335 @@
+/* Backpack */
+
+.bpwrapper {
+  width: 976px;
+}
+
+.bppage {
+	margin: 0 auto 15px;
+	clear: both;
+  display: block;
+}
+
+/* Items */
+
+.bpitem {
+  width: 81px;
+  height: 60px;
+  margin: 4px 4px;
+  text-align: center;
+  position: relative;
+  display: block; float: left;
+  background-color: #3C352E;
+  border: 4px solid #3C352E;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.bpitem:hover {
+  border-color: #847668;
+}
+
+.bpitem.bpselected {
+  background-color: #c8bba2;
+  border-color: #c8bba2;
+}
+
+.bpitem img {
+  max-width: 80px;
+  max-height: 100px;
+  margin: -10px;
+}
+
+.bpitem .bpequipped, 
+.bpitem .bplimit {
+  position: absolute;
+  padding: 1px 3px;
+  color:#C94F39;
+  background: #000000;
+  font-size: 11px;
+  line-height: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: default;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.bpitem .bpequipped {
+  bottom: 0;
+  right: 0;
+}
+
+.bpitem .bplimit {
+  top: 0;
+  left: 0;
+}
+
+.bpitem .bpname, 
+.bpitem .bpdesc, 
+.bpitem .bpgift, 
+.bpitem .bpsplat {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  background: url('../images/sprites.png') no-repeat 100px 100px;
+  text-indent: 9999px;
+  overflow: hidden;
+}
+
+.bpitem .bpname {
+  bottom: 0; left: 0;
+  background-position: -20px -24px;
+}
+
+.bpitem .bpdesc {
+  top: 20px; left: 0;
+  background-position: -20px -48px;
+}
+
+.bpitem .bpgift {
+  top: 20px; right: 0;
+  background-position: -20px 0;
+  padding: 0;
+}
+
+.bpitem .bpsplat {
+  top: 0; right: 0;
+}
+
+.bpitem .bpsplat.bpcol141414  { background-position: -44px -144px; }
+.bpitem .bpsplat.bpcol424f3b  { background-position: -44px -120px; }
+.bpitem .bpsplat.bpcol51384a  { background-position: -44px -48px; }
+.bpitem .bpsplat.bpcol694d3a  { background-position: -68px -48px; }
+.bpitem .bpsplat.bpcol729e42  { background-position: -68px -120px; }
+.bpitem .bpsplat.bpcol7c6c57  { background-position: -68px -24px; }
+.bpitem .bpsplat.bpcol7d4071  { background-position: -68px -96px; }
+.bpitem .bpsplat.bpcol7e7e7e  { background-position: -44px -24px; }
+.bpitem .bpsplat.bpcola57545  { background-position: -68px -72px; }
+.bpitem .bpsplat.bpcolc5af91  { background-position: -68px -144px; }
+.bpitem .bpsplat.bpcolcf7336  { background-position: -44px -72px; }
+.bpitem .bpsplat.bpcold8bed8  { background-position: -68px 0; }
+.bpitem .bpsplat.bpcole6e6e6  { background-position: -44px 0; }
+.bpitem .bpsplat.bpcole7b53b  { background-position: -44px -96px; }
+
+
+/* Info Boxes */
+
+.bpinfo {
+  min-width: 250px;
+  max-width: 350px;
+  display: block;
+}
+
+.bpinfo span {
+  color: #766b5e;
+  display: block;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.bpinfo .bpname {
+  color: #B2B2B2;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight:bold;
+  text-transform:uppercase; 
+}
+
+.bpinfo .bpname.bpcustom {
+}
+
+.bpinfo .bpname.bpreal {
+  font-size: 1em;
+}
+
+.bpinfo .bpdesc {
+  color: #EBE2CA;	
+}
+
+.bpinfo .bptitle {
+  margin-bottom: 5px;
+}
+
+.bpinfo .bpattribute {
+}
+
+.bpinfo .bpattribute.bppositive {
+  color: #99CCFF;	
+}
+
+.bpinfo .bpattribute.bpneutral {
+  color: #EBE2CA;	
+}
+
+.bpinfo .bpattribute.bpnegative {
+  color: #FF4040;	
+}
+
+.bpinfo .bptradable {
+  margin-top: 5px;
+}
+
+.bpinfo .bplimit {
+  margin-top: 5px;
+  color: #00a200;
+}
+
+.bpinfo .bpusedby li  {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  opacity: 0.2;
+  background: url('../images/sprites.png') no-repeat;
+}
+
+.bpinfo .bpusedby  .bpactive {
+  opacity: 1.0;
+}
+
+.bpinfo .bpusedby .bpscout { background-position: 0 -100px; }
+.bpinfo .bpusedby .bpsniper { background-position: 0 -120px; }
+.bpinfo .bpusedby .bpsoldier{ background-position: 0 -140px; }
+.bpinfo .bpusedby .bpdemoman { background-position: 0 0; }
+.bpinfo .bpusedby .bpmedic { background-position: 0 -60px; }
+.bpinfo .bpusedby .bpheavy { background-position: 0 -40px; }
+.bpinfo .bpusedby .bppyro { background-position: 0 -80px; }
+.bpinfo .bpusedby .bpspy {  background-position: 0 -160px; }
+.bpinfo .bpusedby .bpengineer { background-position: 0 -20px; }
+
+/* Unique */
+
+.bpitem.bpunique {
+  background-color: #594c1b;
+  border-color: #957e14;
+}
+
+.bpitem.bpunique:hover {
+  border-color: #ffd800;
+}
+
+.bpitem.bpunique.bpselected {
+  background-color: #ffd800;
+  border-color: #ffd800;
+}
+
+.bpinfo.bpunique .bpname {
+  color: #FFD800;
+}
+
+/* Vintage */
+
+.bpitem.bpvintage {
+  background-color: #252935;
+  border-color: #333d5b;
+}
+
+.bpitem.bpvintage:hover {
+  border-color: #456292;
+}
+
+.bpitem.bpvintage.bpselected {
+  background-color: #476291;
+  border-color: #476291;
+}
+
+.bpinfo.bpvintage .bpname {
+  color: #456292;
+}
+
+/* Community, Self-Made */
+
+.bpitem.bpcommunity,
+.bpitem.bpselfmade {
+	background-color: #2f3f24;
+	border-color: #42632c;
+}
+
+.bpitem.bpcommunity:hover,
+.bpitem.bpselfmade:hover {
+	border-color: #618c37;
+}
+
+.bpitem.bpcommunity.bpselected, 
+.bpitem.bpselfmade.bpselected {
+	background-color: #70b14b;
+	border-color: #70b14b;
+}
+
+.bpinfo.bpcommunity .bpname, 
+.bpinfo.bpselfmade .bpname {
+  color: #71B149;
+}
+
+/* Community, Self-Made */
+
+.bpitem.bpdeveloper {
+	background-color: #46213B;
+	border-color: #72245B;
+}
+
+.bpitem.bpdeveloper:hover {
+	border-color: #8c1068;
+}
+
+.bpitem.bpdeveloper.bpselected {
+	background-color: #A50F79;
+	border-color: #A50F79;
+}
+
+.bpinfo.bpdeveloper .bpname {
+  color: #A50F79;
+}
+
+/* Unusual */
+
+.bpitem.bprarity4 {
+  background-color: #34253d;
+  border-color: #58366f;
+}
+
+.bpitem.bprarity4:hover {
+  border-color: #874fad;
+}
+
+.bpitem.bprarity4.bpselected {
+  background-color: #874FAD;
+  border-color: #874FAD;
+}
+
+.bpinfo.bprarity4 .bpname {
+  color: #874FAD;
+}
+
+/* No-colors style items */
+
+.bpnocolors  .bpitem {
+  background-color: #3C352E;
+  border: 4px solid #3C352E;	
+}
+
+.bpnocolors  .bpitem:hover {
+  border-color: #847668;
+}
+
+.bpnocolors  .bpitem.bpselected {
+  background-color: #c8bba2;
+  border-color: #c8bba2;
+}
+
+/* No-icons */
+
+.bpnoicons  .bpitem .bpname, 
+.bpnoicons  .bpitem .bpdesc, 
+.bpnoicons  .bpitem .bpgift, 
+.bpnoicons  .bpitem .bpsplat {
+  display: none;	
+}
+
+

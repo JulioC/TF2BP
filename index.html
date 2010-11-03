@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TF2BP</title>
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
+    <link rel="stylesheet" href="styles/tf2bp.css" type="text/css" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="scripts/jquery.history.js"></script>
+    <script type="text/javascript" src="scripts/jquery.steam.js"></script>
+    <script type="text/javascript" src="scripts/jquery.steam.webapi.js"></script>
+    <script type="text/javascript" src="scripts/jquery.steam.tf2items.js"></script>
+    <script type="text/javascript" src="scripts/jquery.tftooltip.js"></script>
+    <script type="text/javascript" src="scripts/jquery.tf2bp.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="wrapper">
+        <div id="banner">
+          <div id="title">
+              <h1><a href="http://tf2bp.com/"><strong>TF2BP</strong>.com</a></h1>
+              <span class="shortabout">Updating your backpack</span>
+          </div>
+          <div id="profile"></div>
+        </div>
+        <div id="tools">
+          <div id="menu">
+            <a href="#!/list" class="button">Item List</a>
+            <a href="#!/about" class="button">About</a>
+          </div>
+          <form id="search">
+            <input type="text" id="querybox" value="profile link, userid or steam id here"/>
+            <a href="#" id="gobutton" class="button">&raquo;</a>
+          </form>
+        </div>
+        <div id="options">
+          <a href="#" class="title">Options</a>
+          <ul>
+            <li><a href="#" id="toggle-colors">Toggle Colors</a></li>
+            <li><a href="#" id="toggle-icons">Toggle Icons</a></li>
+            <li><a href="#" id="change-images">Change Images</a></li>
+          </ul>
+        </div>
+        <div id="status"></div>
+      </div>
+    </div>
+    <div id="content" class="wrapper">
+      <div id="backpack">
+      
+      </div>
+      <div id="about">
+        <h2>About</h2>
+        <p><strong>TF2BP</strong> is different from every TF2 backpack viewer you know.</p>
+        <p>It loads all data Just-in-Time, directly from your browser, so <strong>every time you get fresh data</strong> about the player backpack you want see.</p>
+        <p>Of course there's a downside: since we don't use caches, it may take a while to download the items data and player data, but you won't care about this, because your backpack is always updated.</p>
+        <p>Another plus of <strong>TF2BP</strong> is that all code is open source (licensed under <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>), so if you are a developer, you are free to contribute to make a better backpack (read  below)</p>
+        <h2>Donate</h2>
+        <p>If you like our service, please consider a small donation, so I can keep the server running.</p>
+        
+        <h2>Contribute</h2>
+        <p>All source code used on TF2BP is available on <a href="http://github.com">GitHub</a>.</p>
+        <p>So, if you are a developer and think that any change (new features, bug fix, etc) should be made on <strong>TF2BP</strong>, you can fork <a href="#">our repository on GitHub</a>.</p>
+        <p>If approved, your changes will be commited to the master branch, which is used on <strong>TF2BP.com</strong></p>
+      </div> 
+    </div>
+    <div id="footer">
+      <p>
+        created by <a href="http://thejcs.com.br/" class="highlight">TheJCS</a><br />
+        using <a href="http://www.quirksmode.org/css/contents.html" class="highlight">CSS3</a>, <a href="http://jquery.com/" class="highlight">jQuery</a>, <a href="http://github.com/TheJCS/jQuery-SteamAPI" class="highlight">jQuery SteamAPI</a><br />
+        the <a href="#" class="highlight">source code of this website</a> is available on <a href="http://github.com/TheJCS" class="highlight">my GitHub</a>
+      </p>
+    </div>
+  </body>
+</html>
