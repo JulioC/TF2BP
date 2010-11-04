@@ -40,7 +40,7 @@ $(document).ready(function(){
       }
       
       if(data.gift) {
-        box.append('<a href="#/' + data.gift + '" class="bpgift">Gift</a>'); 
+        box.append('<a href="#/profiles/' + data.gift + '" class="bpgift">Gift</a>'); 
       }
       
       if(data.equipped && data.equipped.length) {
