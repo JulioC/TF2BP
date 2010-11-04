@@ -293,7 +293,7 @@ $(function(){
       options.update();
       return false;
     });
-    
+    var a = 0;
     var getImageFile = function(str) {
       var parts = str.split('/');
       return parts[parts.length-1];
@@ -306,6 +306,9 @@ $(function(){
         
         $.tf2bp.setItemImageMask(function(src, data) {
           var filename = getImageFile(src);
+          if(filename == '') {
+            filename = 'unknown.png';
+          }
           // Once we get an image for each hat color, we can do this
           /*if(data.color) {
             var parts = filename.split('.');
