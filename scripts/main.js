@@ -305,7 +305,7 @@ $(function(){
         $.steam.webapi.setBase('tf2bp.com:8080');
         
         $.tf2bp.setItemImageMask(function(src, data) {
-          var filename = getImageFile(src);
+          /*var filename = getImageFile(src);
           if(filename == '') {
             filename = 'unknown.png';
           }
@@ -314,7 +314,9 @@ $(function(){
             var parts = filename.split('.');
             filename = parts[0] + '_' + data.color + '.' + parts[1];
           }*/
-          return (($.cookie('classicImages') == '1') ? imagePaths.classic : imagePaths.modern) + filename;
+          //return (($.cookie('classicImages') == '1') ? imagePaths.classic : imagePaths.modern) + filename;
+          // Temp fix for images
+          return src;
         });
       },
       update: function(){ 
