@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var tf2bp = function(){    
-    var pageCount = 6; // Pages/backpack
+    var pageCount = 20; // Pages/backpack
     var itemCount = 50; // Items/page
     var itemImageMask = null; 
  
